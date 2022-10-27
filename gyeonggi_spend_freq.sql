@@ -5,7 +5,7 @@ WITH CTE AS
  GROUP BY 시군구명)
  
  SELECT 시도명
-	   ,gf.시군구명
+       ,gf.시군구명
        ,gf.행정구역
        ,CTE.총결제금액
        ,SUM(사용빈도) '사용빈도'
